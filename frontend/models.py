@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class Teachers(models.Model):
+class Teacher(models.Model):
     first_name = models.CharField(max_length=15)
     last_name = models.CharField(max_length=20)
     date = models.DateField()
@@ -14,11 +14,11 @@ class Teachers(models.Model):
 
 
 
-class Students(models.Model):
+class Student(models.Model):
     first_name = models.CharField(max_length=15)
     last_name = models.CharField(max_length=20)
     date = models.DateField()
-    image = models.ImageField(upload_to="teacher_img")
+    image = models.ImageField(upload_to="student_img")
     email = models.EmailField(max_length=50, primary_key=True)
     user_name = models.CharField(max_length=10)
     password = models.CharField(max_length=250)
