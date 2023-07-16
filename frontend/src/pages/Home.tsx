@@ -1,9 +1,15 @@
 import React from 'react'
+import { Nav } from '../components/NavBar/Nav'
+import { Button } from '../UI/Button'
+
 
 export const Home =()=> {
     return (
         <div>
-            Home
+            <div>
+                <Nav />
+                <Button name='Login'/>
+            </div>
         </div>
     )
 }
