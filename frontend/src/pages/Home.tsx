@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav } from '../components/NavBar/Nav'
-import { Button } from '../UI/Button'
+import { Button } from '../UI/Button/Button'
 
 
 export const Home =()=> {
